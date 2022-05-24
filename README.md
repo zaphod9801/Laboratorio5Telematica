@@ -79,3 +79,28 @@ Ver el contenido de un archivo:
 ![image](https://user-images.githubusercontent.com/71454879/169947941-c6530e74-789e-4d36-a66f-0ecbbac22c68.png)
 
 Todo esto también puede hacerse desde la terminal de nuestro nodo maestro, desde el usuario "hadoop"
+
+Podemos ver que tenemos una carpeta previamente creada llamada datasets, para verla usamos:
+```shell
+hdfs dfs -ls /user/hadoop
+```
+O si aun no existe podemos crearla con:
+```shell
+hdfs dfs -mkdir /user/hadoop/datasets
+```
+![image](https://user-images.githubusercontent.com/71454879/169948392-4ce270e4-5129-46f1-9681-1733aff28c05.png)
+
+Podemos traer los contenidos de un bucket S3 dentro del hdfs usando:
+```shell
+hadoop distcp s3://jsruizadatalake2/datasets/raw /tmp/
+```
+![image](https://user-images.githubusercontent.com/71454879/169950594-69ec890f-181b-44ba-a1b6-f32a507cca9c.png)
+Podemos verlos con:
+```shell
+hdfs dfs -ls /tmp/raw
+```
+![image](https://user-images.githubusercontent.com/71454879/169950691-e97e3071-b8dd-4ae8-bb9f-c9ff6dea69e9.png)
+
+También podemos hacerlo desde el hdfs al directorio creado en Hue:
+![image](https://user-images.githubusercontent.com/71454879/169952008-6c61da70-8cbb-4dff-9964-baf46152623f.png)
+![image](https://user-images.githubusercontent.com/71454879/169952051-53d1a69d-f62c-46bb-a825-e012fe434034.png)
