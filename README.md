@@ -2,7 +2,7 @@
 
 Este repositorio contiene las evidencias del desarrollo del laboratorio 5 de la materia Topicos Especiales en Telematica 
 
-## Primera parte, Cluster EMR
+## Primera parte (5-1), Cluster EMR
 El primer paso para esto fue crear el bucket que servirá como datalake para el cluster que crearemos dentro del servicio S3 de AWS así:
 ![image](https://user-images.githubusercontent.com/71454879/169939179-dece8274-9962-43ad-9be2-390efbaf3b14.png)
 ![image](https://user-images.githubusercontent.com/71454879/169939202-98973ff3-09b3-43e4-b19c-d4f3e80a81ea.png)
@@ -60,3 +60,22 @@ Tras completar el registro veremos esto:
 ![image](https://user-images.githubusercontent.com/71454879/169947011-3932a6da-5acf-47bf-b2cd-4a6b705a25f2.png)
 
 
+## Segunda parte (5-2) Gestión de archivos en HDFS y S3
+
+En este punto podremos manejar archivos tanto desde la terminal del nodo maestro como desde la interfaz gráfica de Hue
+
+Podemos explorar archivos:
+![image](https://user-images.githubusercontent.com/71454879/169947642-f713a7fc-0cde-48e7-b184-124c5e043c04.png)
+
+Crear carpetas:
+![image](https://user-images.githubusercontent.com/71454879/169947726-a89de8b5-91c6-43e3-ab12-15b31dd0fec4.png)
+![image](https://user-images.githubusercontent.com/71454879/169947779-2b509f4c-7ab1-4a8c-9d5b-bcadad36e546.png)
+![image](https://user-images.githubusercontent.com/71454879/169947793-678b1caf-6108-4179-a9f6-59f7b1447cd5.png)
+
+Subir archivos:
+![image](https://user-images.githubusercontent.com/71454879/169947902-5815cbe7-952d-4850-8c10-5376ab07a3c2.png)
+
+Ver el contenido de un archivo:
+![image](https://user-images.githubusercontent.com/71454879/169947941-c6530e74-789e-4d36-a66f-0ecbbac22c68.png)
+
+Todo esto también puede hacerse desde la terminal de nuestro nodo maestro, desde el usuario "hadoop"
