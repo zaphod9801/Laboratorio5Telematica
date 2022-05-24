@@ -12,6 +12,7 @@ Una vez creado el bucket, se creara en su interior una carpeta llamada "raw" ser
 ![image](https://user-images.githubusercontent.com/71454879/169939918-3f7180f6-5bbf-4113-80ab-fc1a606240e2.png)
 Ahora, en esta carpeta se subirán los datasets que fueron dados por el profesor usando la función de upload, simplemente se arrastran
 ![image](https://user-images.githubusercontent.com/71454879/169939989-f2c8903e-9b7c-40f1-a9f7-1bda8834f690.png)
+(el link de acceso al bucket es https://jsruizadatalake2.s3.amazonaws.com/raw/)
 
 Ahora se pasará a crear el cluster EMR, usando la opción crear cluster dentro del servicio EMR de AWS, dentro de este tendremos que 
 tener la siguiente configuración:
@@ -46,4 +47,16 @@ hdfs dfs -ls /user
 ```
 Viendo algo como esto:
 ![image](https://user-images.githubusercontent.com/71454879/169945563-0af574a3-5176-4548-8af0-31ff7ca4b7f3.png)
+
+Ahora podemos intentar conectarnos mediante la interfaz gráfica de Hue, para esto debemos agregar los puertos: 8888, 8890 y 9443 al 
+Security group y además a las excepciones de "Public Access" de EMR. 
+Para conectarnos usamos la opción "Application user interfaces" del cluster:
+![image](https://user-images.githubusercontent.com/71454879/169946774-603b87d4-ae63-4cce-b8ff-a370f7202e73.png)
+Ahi tendremos la URL para varias aplicaciones, en este caso nos interesa la de Hue:
+![image](https://user-images.githubusercontent.com/71454879/169946823-c2c23aff-cd94-4ff8-84ed-fc4bc25f4fb9.png)
+Al entrar veremos esto:
+![image](https://user-images.githubusercontent.com/71454879/169946927-dfaf638b-4b6f-4ca3-b17c-0f660403876a.png)
+Tras completar el registro veremos esto:
+![image](https://user-images.githubusercontent.com/71454879/169947011-3932a6da-5acf-47bf-b2cd-4a6b705a25f2.png)
+
 
