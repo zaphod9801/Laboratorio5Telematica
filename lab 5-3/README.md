@@ -1,4 +1,4 @@
-#Map reduce en Python con mrjob
+##Map reduce en Python con mrjob
 
 Esta carpeta contiene las soluciones para los ejercicios propuestos en el laboratorio 5.3 
 Todos los archivos .py darán outputs similares a la siguiente puesto que todos los MRJob de cada dataset se ejecutan juntos:
